@@ -1,5 +1,3 @@
-memory = Memory()
-
 class Memory:
     def __init__(self):
         self.isPpuScrollOnX = True
@@ -85,4 +83,5 @@ class Memory:
             self.PPU_LAST_WRITE = value
         if addr >= 0x5000:
             self.mapper.write(addr, value)
-            
+
+memory = Memory()            
